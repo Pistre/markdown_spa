@@ -3,9 +3,9 @@ requires = ['flit_core>=3.2,<4']
 build-backend = 'flit_core.buildapi'
 
 [project.urls]
-Homepage = "https://github.com/MrSpaar/markdown_spa"
-Documentation = "https://mrspaar.github.io/markdown_spa/"
-Issues = "https://github.com/MrSpaar/markdown_spa/issues"
+Homepage = "https://github.com/jpistre/markdown_spa"
+Documentation = "https://jpistre.github.io/markdown_spa/"
+Issues = "https://github.com/jpistre/markdown_spa/issues"
 
 [project.scripts]
 markdown_spa = "markdown_spa:main"
@@ -16,13 +16,16 @@ readme = "README.md"
 requires-python = ">=3.8"
 description = "A static site generator for Markdown files."
 dynamic = ["version"]
-license = {file = "LICENSE"}
-authors = [{name = "MrSpaar"}]
+license = { file = "LICENSE" }
+authors = [{ name = "Julien Pistre" }]
 dependencies = [
-    "markdown", "jinja2",
-    "pygments", "click",
-    "requests", "importlib_metadata",
-    "colorama; platform_system == 'Windows'"
+    "markdown",
+    "jinja2",
+    "pygments",
+    "click",
+    "requests",
+    "importlib_metadata",
+    "colorama; platform_system == 'Windows'",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
